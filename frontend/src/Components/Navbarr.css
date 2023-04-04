@@ -1,0 +1,50 @@
+#Navbar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 119, 255);
+    /* background-color: rgb(242, 53, 53); */
+    /* background-color: red; */
+    /* background-color: rgb(146, 11, 11); */
+}
+#Navbar>h1{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#FullNavbar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+#FullNavbar>a{
+    font-size: larger;
+    font-weight: bold;
+}
+#SmallNavbar{
+    display: none;
+}
+
+@media screen and (max-width:605px) {
+    #Navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #FullNavbar{
+        display: none;
+    }
+    #SmallNavbar{
+        display: block;
+        background-color: transparent;
+    }
+    #ModalNav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

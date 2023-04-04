@@ -1,0 +1,120 @@
+#FormPage{
+    height: 93.5vh;
+    padding-top: 10vh;;
+}
+#Form{
+    border: 3px solid rgb(0, 119, 255);
+    width: 25%;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+#Form>h2{
+    color: rgb(0, 119, 255);
+}
+#Form>form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#Form>form>input{
+    border: 3px solid rgb(0, 119, 255);
+    border-radius: 7px;
+    height: 50px;
+    padding-left: 20px;
+    color: rgb(0, 119, 255);
+    background-color: transparent;
+}
+#Form>form>input::placeholder{
+    color: rgb(129, 186, 252);
+}
+#Form>form>input:focus{
+    outline: none !important;
+    border:3px solid rgb(0, 119, 255);
+}
+#Form>form>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid rgb(0, 119, 255);
+    border-radius: 7px;
+    height: 50px;
+    padding-right: 10px;
+}
+#Form>form>div>input{
+    width: 90%;
+    height: 43px;
+    padding-left: 20px;
+    color: rgb(0, 119, 255);
+    background-color: transparent;
+}
+#Form>form>div>input::placeholder{
+    color: rgb(129, 186, 252);
+}
+#Form>form>div>input:focus{
+    outline: none !important;
+    border:none;
+}
+#Form>form>button{
+    border: 3px solid rgb(0, 119, 255);
+    border-radius: 7px;
+    color: rgb(0, 119, 255);
+    width: 50%;
+    margin: auto;
+    height: 50px;
+    font-weight: bold;
+}
+#Form>form>button:hover{
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+#Form>h1>a{
+    color: rgb(0, 119, 255);
+}
+
+@media screen and (max-width:1363px) {
+    #Form{
+        width: 35%;
+    }
+}
+@media screen and (max-width:1367px) {
+    #Form{
+        width: 37%;
+    }
+}
+@media screen and (max-width:900px) {
+    #Form{
+        width: 40%;
+    }
+}
+@media screen and (max-width:768px) {
+    #Form{
+        width: 50%;
+    }
+}
+@media screen and (max-width:607px) {
+    #Form{
+        width: 70%;
+    }
+}
+@media screen and (max-width:425px) {
+    #Form{
+        width: 90%;
+    }
+    #Form>form>input{
+        height: 40px;
+    }
+    #Form>form>div{
+        height: 40px;
+    }
+    #Form>form>div>input{
+        height: 34px;
+        background-color: transparent;
+    }
+    #Form>form>button{
+        height: 40px;
+    }
+}
